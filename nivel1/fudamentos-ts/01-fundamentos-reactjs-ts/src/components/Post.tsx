@@ -104,7 +104,6 @@ export function Post({ author, publishedAt, content }: PostProps) {
                     onInvalid={handleNewCommentInvalid}
                     required
                 />
-
                 <footer>
                     <button
                         type='submit'
