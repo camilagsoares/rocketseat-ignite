@@ -1,4 +1,4 @@
-import { Post } from "./components/Post"
+import { Post, PostType } from "./components/Post"
 import { Header } from './components/Header'
 import { Sidebar } from "./components/Sidebar"
 import './global.css'
@@ -6,11 +6,12 @@ import styles from './App.module.css'
 
 export function App() {
 
-  const posts = [
+
+  const posts: PostType[] = [
     {
       id: 1,
       author: {
-        avatarUrl: "https://github.com/diego3g.png",
+        avatar_Url: "https://github.com/diego3g.png",
         name: "Diego Fernandes",
         role: "CTO @Rocketseat"
       },
@@ -25,7 +26,7 @@ export function App() {
     {
       id: 2,
       author: {
-        avatarUrl: "https://github.com/orodrigogo.png",
+        avatar_Url: "https://github.com/orodrigogo.png",
         name: "Rodrigo Gonçalves",
         role: "Educator @Rocketseat"
       },
@@ -50,9 +51,7 @@ export function App() {
               return (
                 <Post
                   key={post.id}
-                  author={post.author}
-                  content={post.content}
-                  publishedAt={post.publishedAt}
+                  post={post}
                 />
               )
             })
