@@ -8,7 +8,7 @@ function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
-      REACT
+      REACT 
     </ThemeProvider>
   )
 }
