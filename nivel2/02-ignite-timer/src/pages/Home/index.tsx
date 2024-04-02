@@ -36,7 +36,7 @@ export function Home() {
             max={60}
           />
 
-          <span>minutos.</span>
+          <span>minutos. </span>
         </FormContainer>
 
         <CountdownContainer>
